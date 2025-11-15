@@ -1,10 +1,3 @@
-def to2(x):
-    k = ""
-    while x > 0:
-        k += str(x%2)
-        x = x//2
-    return (k[::-1])
-
 def puzirek(massiv):
     f = True
     while f:
@@ -33,6 +26,13 @@ def vstavka(massiv):
             j -= 1
         massiv[j + 1] = smth
     return massiv
+
+def to2(x):
+    k = ""
+    while x > 0:
+        k += str(x%2)
+        x = x//2
+    return (k[::-1])
 
 def to8(x):
     k = ""
